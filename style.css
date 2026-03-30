@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #222; /* Darker for better contrast */
     line-height: 1.6;
 }
 
@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background-color: #d62300; /* Burger King Red */
+    background-color: #c01f00; /* Darker Red for contrast */
     color: white;
     position: sticky;
     top: 0;
@@ -35,15 +35,19 @@ body {
 
 nav a {
     text-decoration: none;
-    color: #f5eb13; /* Burger King Yellow */
+    color: #ece400; /* Darker Yellow for contrast against red */
     margin-left: 20px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-/* --- Page/Section Setup --- */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Section Setup --- */
 .page-container {
-    min-height: 100vh; /* Full screen height for each page */
+    min-height: 100vh;
     padding: 80px 20px;
     display: flex;
     justify-content: center;
@@ -58,23 +62,27 @@ nav a {
 
 /* --- Background Colors --- */
 #home-section {
-    background-color: #f5eb13; /* Yellow Page */
+    background-color: #fbd600; /* Solid Yellow */
 }
 
 #products-section {
-    background-color: #502314; /* Brown Page */
+    background-color: #401a0d; /* Dark Brown for Contrast */
     color: white;
 }
 
-#contact-section {
-    background-color: #ffffff; /* White Page */
+#products-section h2 {
+    color: #fbd600;
 }
 
-/* --- Home Section Styles --- */
+#contact-section {
+    background-color: #ffffff;
+}
+
+/* --- Content Styling --- */
 h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #502314;
+    color: #401a0d;
 }
 
 .main-image {
@@ -83,19 +91,6 @@ h1 {
     height: auto;
     border: 8px solid white;
     margin: 20px 0;
-}
-
-.description {
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-/* --- Menu Grid Styles --- */
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #f5eb13;
 }
 
 .menu-list {
@@ -117,14 +112,9 @@ h1 {
     height: 180px;
     object-fit: cover;
     margin-bottom: 15px;
-    border-radius: 5px;
 }
 
-.menu-item h3 {
-    margin-bottom: 10px;
-}
-
-/* --- Contact & Map Styles --- */
+/* --- Contact & Map --- */
 .contact-row {
     display: flex;
     justify-content: space-around;
@@ -138,28 +128,15 @@ h1 {
     flex: 1;
 }
 
-.map-area {
-    flex: 1;
-}
-
 iframe {
-    border: 5px solid #502314;
+    border: 5px solid #401a0d;
     border-radius: 10px;
-    max-width: 100%;
 }
 
-/* --- Responsive Design for Mobile --- */
+/* --- Responsive --- */
 @media (max-width: 768px) {
     .menu-list, .contact-row {
         flex-direction: column;
     }
-
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
+    h1 { font-size: 2rem; }
 }
