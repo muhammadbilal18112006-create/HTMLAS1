@@ -1,4 +1,3 @@
-/* --- Global Styles --- */
 html {
     scroll-behavior: smooth;
 }
@@ -11,17 +10,16 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    color: #222; /* Darker for better contrast */
+    color: #222;
     line-height: 1.6;
 }
 
-/* --- Header & Navigation --- */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background-color: #c01f00; /* Darker Red for contrast */
+    background-color: #c01f00;
     color: white;
     position: sticky;
     top: 0;
@@ -35,7 +33,7 @@ body {
 
 nav a {
     text-decoration: none;
-    color: #ece400; /* Darker Yellow for contrast against red */
+    color: #ece400;
     margin-left: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -45,7 +43,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* --- Section Setup --- */
 .page-container {
     min-height: 100vh;
     padding: 80px 20px;
@@ -60,13 +57,13 @@ nav a:hover {
     text-align: center;
 }
 
-/* --- Background Colors --- */
+/* Background Colors */
 #home-section {
-    background-color: #fbd600; /* Solid Yellow */
+    background-color: #fbd600;
 }
 
 #products-section {
-    background-color: #401a0d; /* Dark Brown for Contrast */
+    background-color: #401a0d;
     color: white;
 }
 
@@ -78,7 +75,6 @@ nav a:hover {
     background-color: #ffffff;
 }
 
-/* --- Content Styling --- */
 h1 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -114,7 +110,7 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* --- Contact & Map --- */
+/*Contact & Map */
 .contact-row {
     display: flex;
     justify-content: space-around;
@@ -133,7 +129,6 @@ iframe {
     border-radius: 10px;
 }
 
-/* --- Responsive --- */
 @media (max-width: 768px) {
     .menu-list, .contact-row {
         flex-direction: column;
